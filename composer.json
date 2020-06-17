@@ -1,0 +1,39 @@
+{
+  "name": "patrick-blom/article-alert",
+  "description": "This module allows the customer to be informed as soon as a sold out item is available again.",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "article",
+    "alert",
+    "email"
+  ],
+  "homepage": "https://www.patrick-blom.de/",
+  "license": [
+    "GPL-3.0-only"
+  ],
+  "extra": {
+    "oxideshop": {
+      "blacklist-filter": [
+        "documentation/**/*.*",
+        "config.inc.TEST.php.dist"
+      ],
+      "target-directory": "pb/ArticleAlert"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "oxid-esales/oxideshop-ce": "^v6.5.3"
+  },
+  "require-dev": {
+    "oxid-esales/testing-library": "^v7.1.1",
+    "phpstan/phpstan": "^0.12.29"
+  },
+  "autoload": {
+    "psr-4": {
+      "PaBlo\\ArticleAlert\\": "../../../source/modules/pb/ArticleAlert/"
+    }
+  }
+}
