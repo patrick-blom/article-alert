@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace PaBlo\ArticleAlert\Adapter\Storage;
+namespace PaBlo\ArticleAlert\Domain\Storage;
 
 use PaBlo\ArticleAlert\Domain\Storage\Contract\Alert;
 use PaBlo\ArticleAlert\Domain\Struct\AlertStorageArgument;
 
 /**
- * Class OxidTmpFile
- * @package PaBlo\ArticleAlert\Adapter\Repository
+ * Class FileSystem
+ * @package PaBlo\ArticleAlert\Domain\Storage
  */
-class OxidTmpFile implements Alert
+class FileSystem implements Alert
 {
     private const FILENAME = 'article_alert_db';
 

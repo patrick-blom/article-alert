@@ -16,7 +16,7 @@ services:
   PaBlo\ArticleAlert\Domain\Service\EmailAlertRecorder:
     class: 'PaBlo\ArticleAlert\Domain\Service\EmailAlertRecorder'
 
-  PaBlo\ArticleAlert\Adapter\Storage\OxidTmpFile:
-    class: 'PaBlo\ArticleAlert\Adapter\Storage\OxidTmpFile'
+  PaBlo\ArticleAlert\Domain\Storage\FileSystem:
+    class: 'PaBlo\ArticleAlert\Domain\Storage\FileSystem'
     arguments: ['@=service("OxidEsales\\Eshop\\Core\\Config").getConfigParam("sCompileDir")']
 
