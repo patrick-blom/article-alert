@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace PaBlo\ArticleAlert\Domain\Struct;
 
-
 use PaBlo\ArticleAlert\Domain\Model\Contract\Article;
 use PaBlo\ArticleAlert\Domain\Model\Contract\User;
 

@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace PaBlo\ArticleAlert\Domain\Service;
 
-
 use PaBlo\ArticleAlert\Domain\Service\Contract\AlertRecorder;
 use PaBlo\ArticleAlert\Domain\Storage\Contract\Alert as AlertStorage;
 use PaBlo\ArticleAlert\Domain\Struct\AlertRecorderArgument;
 use PaBlo\ArticleAlert\Domain\Struct\AlertStorageArgument;
 
+/**
+ * Class EmailAlertRecorder
+ * @package PaBlo\ArticleAlert\Domain\Service
+ */
 class EmailAlertRecorder implements AlertRecorder
 {
     /**

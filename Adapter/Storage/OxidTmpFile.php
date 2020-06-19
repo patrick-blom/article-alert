@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace PaBlo\ArticleAlert\Adapter\Storage;
 
-
 use PaBlo\ArticleAlert\Domain\Storage\Contract\Alert;
 use PaBlo\ArticleAlert\Domain\Struct\AlertStorageArgument;
 
@@ -38,7 +37,7 @@ class OxidTmpFile implements Alert
         $user = $storageArgument->user();
         $article = $storageArgument->article();
 
-        return (bool)file_put_contents(
+        return $this->writeToDisk(
             $this->path . DIRECTORY_SEPARATOR . self::FILENAME,
             sprintf(
                 '%s - %s' . PHP_EOL,
@@ -47,5 +46,17 @@ class OxidTmpFile implements Alert
             ),
             FILE_APPEND
         );
+    }
+
+    /**
+     * @param string $path
+     * @param string $content
+     * @param int $flag
+     *
+     * @return bool
+     */
+    private function writeToDisk(string $path, string $content, int $flag = 0): bool
+    {
+        return (bool)file_put_contents($path, $content, $flag);
     }
 }

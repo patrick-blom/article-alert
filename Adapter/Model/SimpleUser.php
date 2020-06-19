@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace PaBlo\ArticleAlert\Adapter\Model;
 
-
 use PaBlo\ArticleAlert\Domain\Model\Contract\User;
 
+/**
+ * Class SimpleUser
+ * @package PaBlo\ArticleAlert\Adapter\Model
+ */
 class SimpleUser implements User
 {
     /**

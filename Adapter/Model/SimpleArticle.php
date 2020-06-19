@@ -7,6 +7,10 @@ namespace PaBlo\ArticleAlert\Adapter\Model;
 use OxidEsales\Eshop\Application\Model\Article as oxArticle;
 use PaBlo\ArticleAlert\Domain\Model\Contract\Article;
 
+/**
+ * Class SimpleArticle
+ * @package PaBlo\ArticleAlert\Adapter\Model
+ */
 class SimpleArticle implements Article
 {
     /**
@@ -36,10 +40,18 @@ class SimpleArticle implements Article
      */
     public function name(): string
     {
-        if (!$this->article->isLoaded()) {
+        if (!$this->loaded()) {
             return 'unkown';
         }
 
         return $this->article->getFieldData('oxtitle');
+    }
+
+    /**
+     * @return bool
+     */
+    public function loaded(): bool
+    {
+        return $this->article->isLoaded();
     }
 }
