@@ -23,18 +23,14 @@ $aModule = [
     'url' => 'https://www.patrick-blom.de/',
     'email' => 'info@patrick-blom.de',
     'extend' => [
-        \OxidEsales\Eshop\Application\Controller\ArticleDetailsController::class => \PaBlo\ArticleAlert\Infrastructure\Controller\ArticleDetails::class,
+        \OxidEsales\Eshop\Application\Controller\ArticleDetailsController::class => \PaBlo\ArticleAlert\Infrastructure\Application\Controller\ArticleDetails::class,
     ],
     'blocks' => [
         [
             'template' => 'page/details/inc/productmain.tpl',
             'block' => 'details_productmain_tobasket',
-            'file' => 'Infrastructure/views/blocks/page/deatils/inc/productmain__details_productmain_tobasket.tpl',
+            'file' => 'Infrastructure/Application/views/blocks/page/deatils/inc/productmain__details_productmain_tobasket.tpl',
             'position' => '1',
         ]
-    ],
-    'events' => [
-        'onActivate' => 'PaBlo\ArticleAlert\Infrastructure\Setup\ArticleAlert::onActivate',
-        'onDeactivate' => 'PaBlo\ArticleAlert\Infrastructure\Setup\ArticleAlert::onDeactivate',
     ]
 ];

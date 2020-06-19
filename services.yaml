@@ -2,3 +2,21 @@ services:
   _defaults:
     autowire: true
     public: false
+
+  PaBlo\ArticleAlert\Adapter\Service\OxidEmailAlert:
+    class: 'PaBlo\ArticleAlert\Adapter\Service\OxidEmailAlert'
+    public: true
+
+  PaBlo\ArticleAlert\Adapter\Model\SimpleArticle:
+    class: 'PaBlo\ArticleAlert\Adapter\Model\SimpleArticle'
+    arguments:
+      - !service
+        class: 'OxidEsales\Eshop\Application\Model\Article'
+
+  PaBlo\ArticleAlert\Domain\Service\EmailAlertRecorder:
+    class: 'PaBlo\ArticleAlert\Domain\Service\EmailAlertRecorder'
+
+  PaBlo\ArticleAlert\Adapter\Storage\OxidTmpFile:
+    class: 'PaBlo\ArticleAlert\Adapter\Storage\OxidTmpFile'
+    arguments: ['@=service("OxidEsales\\Eshop\\Core\\Config").getConfigParam("sCompileDir")']
+
