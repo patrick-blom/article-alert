@@ -1,5 +1,5 @@
 {
-  "name": "patrick-blom/article-alert",
+  "name": "patrick-blom/article-alert-poc",
   "description": "This module allows the customer to be informed as soon as a sold out item is available again.",
   "type": "oxideshop-module",
   "keywords": [

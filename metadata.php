@@ -9,7 +9,7 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id' => 'articlealert',
+    'id' => 'articlealertpoc',
     'title' => [
         'de' => 'PaBlo - Artikel Alarm',
         'en' => 'PaBlo - article alert',
