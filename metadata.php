@@ -18,7 +18,7 @@ $aModule = [
         'de' => 'Diese Modul erm&ouml;glicht dem Kunden sich benachrichtigen zu lassen, sobald ein ausverkaufter Artikel wieder verfügbar ist.',
         'en' => 'This module allows the customer to be informed as soon as a sold out item is available again.',
     ],
-    'version' => '1.0',
+    'version' => '1.0.0',
     'author' => 'Patrick Blom',
     'url' => 'https://www.patrick-blom.de/',
     'email' => 'info@patrick-blom.de',
