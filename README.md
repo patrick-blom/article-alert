@@ -1,3 +1,9 @@
+[![PHP Version](https://flat.badgen.net/packagist/php/patrick-blom/article-alert-poc/?cache=300&scale=1.1)](https://github.com/patrick-blom/article-alert)
+[![Stable Version](https://flat.badgen.net/packagist/v/patrick-blom/article-alert-poc/latest/?label=latest&cache=300&scale=1.1)](https://packagist.org/packages/patrick-blom/article-alert-poc)
+[![Package Name](https://flat.badgen.net/packagist/name/patrick-blom/article-alert-poc/?label=packagist&cache=300&scale=1.1)](https://packagist.org/packages/patrick-blom/article-alert-poc)
+[![License](https://flat.badgen.net/packagist/license/patrick-blom/article-alert-poc/?label=license&cache=300&scale=1.1)](https://github.com/patrick-blom/article-alert/blob/master/LICENSE)
+[![Follow me on twitter](https://flat.badgen.net/twitter/follow/pbl0m/?label=@pbl0m&cache=300&scale=1.1)](https://twitter.com/pbl0m)
+
 Article Alert Module POC
 ==================
 
